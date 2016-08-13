@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+    <h1>{{is_created}}</h1>
+    {% if all_sessions_list %}
+        <h2><a href="{% url 'runner:averageSpeed' %}">Average Speed</a></h2>
+        <h2><a href="{% url 'runner:distance' %}">Total distance</a></h2>
+        <ul>
+            {% for session in all_sessions_list %}
+                <li>
+                    <a href="{% url 'runner:session' session.id %}">{{ session.distance }}</a>
+                    <a href="{% url 'runner:delete' session.id %}">Delete</a>
+                </li>    
+            {% endfor %}
+        </ul>
+        {% else %}
+            <p>No run sessions are available.</p>
+    {% endif %}
+    <h2><a href="{% url 'runner:create' %}">Create New RunSession</a></h2>
+</html>

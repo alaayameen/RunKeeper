@@ -1,0 +1,2 @@
+[{"model": "authtoken.token", "pk": "2aff6490fd1c30ce46b3589e0b231f49e0c12ca7", "fields": {"user": 2, "created": "2016-08-13T08:10:59.305Z"}},
+ {"model": "authtoken.token", "pk": "a2d33685a3ddd5afcb363010da80b2a03d531ac9", "fields": {"user": 3, "created": "2016-08-13T08:55:02.108Z"}}]

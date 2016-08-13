@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+    <form method="post">{% csrf_token %}
+        Are you sure you want to delete "{{ object.distance }}" ?
+        <input type="submit" value="Submit" />
+    </form>
+</html>
